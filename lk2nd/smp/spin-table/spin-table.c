@@ -208,10 +208,6 @@ static int lk2nd_smp_spin_table_setup(void *dtb, const char *cmdline,
 	struct smp_spin_table *smp;
 	int cpus, ret, node;
 
-	/* Downstream boots CPUs itself */
-	if (boot_type & (BOOT_DOWNSTREAM | BOOT_LK2ND))
-		return 0;
-
 	cpus = check_cpus(dtb, boot_type & BOOT_ARM64,
 			  lk2nd_cmdline_scan(cmdline, "lk2nd.spin-table=force"));
 	if (cpus < 0)
