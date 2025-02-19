@@ -4,3 +4,4 @@ LOCAL_DIR := $(GET_LOCAL_DIR)
 
 QCDTBS += \
 	  $(LOCAL_DIR)/hack2.dtb \
+	 $(LOCAL_DIR)/QCOM_ID_MSM8260.dtb \
