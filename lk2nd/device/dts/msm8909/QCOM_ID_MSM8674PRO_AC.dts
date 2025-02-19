@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+#include <skeleton64.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	qcom,msm-id = <QCOM_ID_MSM8674PRO_AC 0>;
+	qcom,board-id = <QCOM_BOARD_ID_QRD 0x09>,
+			<QCOM_BOARD_ID(QRD, 1, 0) 0x09>;
+};
+
+&lk2nd {
+	lxf_p5100 {
+		model = "QCOM_ID_MSM8674PRO_AC";
+		compatible = "hack,hack";
+		lk2nd,match-cmdline = "*";
+		
+
+	};
+};
