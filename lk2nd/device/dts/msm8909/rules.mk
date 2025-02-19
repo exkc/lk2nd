@@ -6,3 +6,4 @@ QCDTBS += \
 	  $(LOCAL_DIR)/hack2.dtb \
 	 $(LOCAL_DIR)/QCOM_ID_MSM8260.dtb \
 	 $(LOCAL_DIR)/QCOM_ID_MSM8660.dtb \
+	 $(LOCAL_DIR)/QCOM_ID_APQ8060.dtb \
