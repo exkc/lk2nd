@@ -1,0 +1,101 @@
+[0] welcome to lk
+
+[10] platform_init()
+[10] target_init()
+[20] MMC card: RC14MB (0.12, 03 2004), manufacturer: 15, OEM: 100, capacity: 62537072640 bytes
+[30] SDHC Running in HS400 mode
+[30] Done initialization of the card
+[40] SPMI read command failure: 			cmd_id = 1, error = 2
+[40] SPMI read command failure: 			cmd_id = 1, error = 2
+[50] SPMI read command failure: 			cmd_id = 1, error = 2
+[50] SPMI read command failure: 			cmd_id = 1, error = 2
+[60] SPMI read command failure: 			cmd_id = 1, error = 2
+[60] SPMI read command failure: 			cmd_id = 1, error = 2
+[70] SPMI read command failure: 			cmd_id = 1, error = 2
+[70] SPMI read command failure: 			cmd_id = 1, error = 2
+[80] SPMI read command failure: 			cmd_id = 1, error = 2
+[80] SPMI read command failure: 			cmd_id = 1, error = 2
+[90] SPMI read command failure: 			cmd_id = 1, error = 2
+[90] SPMI read command failure: 			cmd_id = 1, error = 2
+[100] SPMI read command failure: 			cmd_id = 1, error = 2
+[100] SPMI read command failure: 			cmd_id = 1, error = 2
+[110] SPMI read command failure: 			cmd_id = 1, error = 2
+[110] Waiting for the RPM to populate smd channel table
+[120] lk2nd_init()
+[120] Booted @ 0x10008000, r0=0x0, r1=0x0, r2=0x12e00000
+[120] MMU mapping mismatch @ 0x12e00000: 0x12e01c1e != 0x12e00c1a
+[130] Found valid DTB with 1773 bytes total
+[130] Command line from previous bootloader: lk2nd androidboot.ap_serial=0x00d25075 androidboot.sec_atd.tty=/dev/ttyHSL0 sec_log=0x200000@0xa0200000 sec_dbg=0x1ff000@0xa0000000 androidboot.revision=10 androidboot.warranty_bit=1 androidboot.bootloader=C5000ZHU1CSA1 androidboot.boot_recovery=0 sec_debug.reset_reason=0x0 sec_dbg_ex_info=0x400@0xa01ff000 charging_mode=0x30 pmic_info=3 androidboot.debug_level=0x4f4c sec_debug.enable=0 sec_debug.enable_user=0 msm_rtb.enable=0 androidboot.cp_debug_level=0x55FF sec_debug.enable_cp_debug=0 vmalloc=450M uart_dbg=0 cordon=d054e5d3e85db44bef614f9af9377bca connie=SM-C5000_HK_CHN_aa9f3b0dcb5833997bc9e7fb03119a91 fg_reset=0 androidboot.security_mode=1526595585 androidboot.ucs_mode=0 androidboot.sku_theme= androidboot.skutheme_offset=9437212 androidboot.emmc=true androidboot.serialno=f643c224 androidboot.baseband=msm lcd_id=0x420401 lcd_id2=0xffffff hall_ic=0x0 mdss_mdp.panel=1:dsi:0:ss_dsi_panel_S6E3FA3_AMS520KG09_FHD:1:none:cfg:single_dsi
+[220] Failed to read 'lk2nd,dtb-files': -1
+[220] Detected device: Samsung Galaxy C5 (compatible: samsung,c5)
+[230] Unexpected DTB selected by bootloader, need to override
+[250] MDP continuous splash detected: pipe RGB_0, base: 0xa8000000, stride: 3240, src: 1080x1920 (0,0), img: 1080x1920, out: 1080x1920 (0,0), format: 0x2243f (bpp: 3)
+[260] MMU mapping mismatch @ 0xa8000000: 0xa8001c1e != 0xa8000c1a
+[260] Display refresh: cmd mode: 1, auto refresh: 0 (sel: 0x21f20)
+[280] Registering wrapper bio devices...
+[280] Registering mmc_sdhci bio devices...
+[300] Error: Command timeout error
+[300] Failure getting OCR response from MMC Card
+[300] MMC card failed to respond, try for SD card
+[360] SPMI read command failure: 			cmd_id = 1, error = 2
+[360] SPMI read command failure: 			cmd_id = 1, error = 2
+[420] SD card: SU02G (8.0, 08 2011), manufacturer: 3, OEM: 5344, capacity: 1977614336 bytes
+[430] Done initialization of the card
+[440] block devices:
+[440]  | dev        | label           | size       | Leaf |
+[450]  | mmc2       |                 |   1886 MiB |      |
+[450]  | wrp0p38    | lk2nd           |    512 KiB | Yes  |
+[460]  | wrp0p37    | userdata        |  56063 MiB | Yes  |
+[460]  | wrp0p36    | cache           |    200 MiB | Yes  |
+[470]  | wrp0p35    | system          |   3048 MiB | Yes  |
+[470]  | wrp0p34    | persdata        |      9 MiB | Yes  |
+[480]  | wrp0p33    | apnhlos         |     24 MiB | Yes  |
+[490]  | wrp0p32    | modem           |    104 MiB | Yes  |
+[490]  | wrp0p31    | dsp             |     16 MiB | Yes  |
+[500]  | wrp0p30    | devcfg          |    256 KiB | Yes  |
+[500]  | wrp0p29    | mota            |   1024 KiB | Yes  |
+[510]  | wrp0p28    | config          |     32 KiB | Yes  |
+[510]  | wrp0p27    | keystore        |    512 KiB | Yes  |
+[520]  | wrp0p26    | steady          |   1024 KiB | Yes  |
+[520]  | wrp0p25    | persistent      |   1024 KiB | Yes  |
+[530]  | wrp0p24    | persist         |     32 MiB | Yes  |
+[530]  | wrp0p23    | ssd             |      8 KiB | Yes  |
+[540]  | wrp0p22    | fsc             |      3 MiB | Yes  |
+[540]  | wrp0p21    | backup          |      5 MiB | Yes  |
+[550]  | wrp0p20    | fota            |      5 MiB | Yes  |
+[550]  | wrp0p19    | bota            |      7 MiB | Yes  |
+[560]  | wrp0p18    | recovery        |     32 MiB | Yes  |
+[560]  | wrp0p17    | boot            |     31 MiB | Yes  |
+[570]  | wrp0p16    | efs             |     14 MiB | Yes  |
+[580]  | wrp0p15    | param           |     10 MiB | Yes  |
+[580]  | wrp0p14    | modemst2        |      3 MiB | Yes  |
+[590]  | wrp0p13    | modemst1        |      3 MiB | Yes  |
+[590]  | wrp0p12    | pad             |     10 MiB | Yes  |
+[600]  | wrp0p11    | cmnlib          |    256 KiB | Yes  |
+[600]  | wrp0p10    | keymaster       |    256 KiB | Yes  |
+[610]  | wrp0p9     | sec             |     16 KiB | Yes  |
+[610]  | wrp0p8     | fsg             |      3 MiB | Yes  |
+[620]  | wrp0p7     | hyp             |    512 KiB | Yes  |
+[620]  | wrp0p6     | tz              |      2 MiB | Yes  |
+[630]  | wrp0p5     | rpm             |    512 KiB | Yes  |
+[630]  | wrp0p4     | aboot           |      2 MiB | Yes  |
+[640]  | wrp0p3     | limits          |     32 KiB | Yes  |
+[640]  | wrp0p2     | ddr             |     32 KiB | Yes  |
+[650]  | wrp0p1     | sbl1bak         |    512 KiB | Yes  |
+[650]  | wrp0p0     | sbl1            |    512 KiB | Yes  |
+[660]  | wrp0       |                 |  59640 MiB |      |
+[670] boot: Trying to boot from the file system...
+[670] boot: Bootable file system not found. Reverting to android boot.
+[680] ERROR: Invalid boot image header
+[680] ERROR: Could not do normal boot. Reverting to fastboot mode.
+[690] fastboot_init()
+[790] USB init ept @ 0x8f691000
+[810] udc_start()
+[910] -- reset --
+[910] -- portchange --
+[1030] -- reset --
+[1030] -- portchange --
+[1160] fastboot: processing commands
+[47550] fastboot: upload
+[51950] fastboot: oem dtb
+[54590] fastboot: oem log
